@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "nomeFantasia": "Pet Shop 1",
+        "nomeFantasia": "Pet Babiss",
         "endereco": "Avenida Paulista, 1273 - Sao Paulo",
         "telefone": "11 12345-6789",
         "atende": [
@@ -17,6 +17,46 @@
         "atende": [
             "caes",
             "papagaio"
+        ]
+    },
+    {
+        "id": 3,
+        "nomeFantasia": "Pet mel",
+        "endereco": "Minha casa bibibibi",
+        "telefone": "11 12345-6789",
+        "atende": [
+            "chinchila",
+            "ratos"
+        ]
+    },
+    {
+        "id": 4,
+        "nomeFantasia": "Pet mel",
+        "endereco": "Minha casa bibibibi",
+        "telefone": "11 12345-6789",
+        "atende": [
+            "chinchila",
+            "ratos"
+        ]
+    },
+    {
+        "id": 5,
+        "nomeFantasia": "Pet mel",
+        "endereco": "Minha casa bibibibi",
+        "telefone": "11 12345-6789",
+        "atende": [
+            "chinchila",
+            "ratos"
+        ]
+    },
+    {
+        "id": 6,
+        "nomeFantasia": "Pet mel",
+        "endereco": "Minha casa bibibibi",
+        "telefone": "11 12345-6789",
+        "atende": [
+            "chinchila",
+            "ratos"
         ]
     }
 ]

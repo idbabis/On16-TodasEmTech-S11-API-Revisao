@@ -1,21 +1,15 @@
-Os slides da aula tão [aqui](https://github.com/reprograma/On16-TodasEmTech-S11-API-Revisao/blob/main/material/revisao.pdf) ❤️
-
+![download](https://user-images.githubusercontent.com/100974682/171773873-d48bfcdb-0921-45a4-8d7a-c31048ff0c78.png)
 <h1 align="center">
     <br>
-    <p align="center">Aulinha de Revisão da On16<p>
+    <p align="center"># Turma Online 16 - Back-end |Reprograma - Semana 11 - API -REVISAO 🚀 <p> 
 </h1>
 
-# Simbora, gatinhas?!
-
-Estamos chegando em mais um período de revisão, passa <s>muito</s> rápido, né?
-
-Atentando-se ao fato de sempre validarmos o conteúdo visto até determinado ponto do nosso curso, iremos trabalhar em um projeto desenvolvido por vocês (novamente).
+# ⚠️ Dessa vez um servidor de jogos e series contém repositório com uma #APIRest em #JavaScript utilizando arquitetura #MVC e #nodejs para realizar um #CRUD completo, nele é possível: cadastrar, atualizar, deletar e retornar games e series , segue mais detalhes abaixo.
 
 ## Por onde começamos?
 
-Vamos relembrar um pouco do que vimos até aqui? Não fique preocupada em decorar todas as sintaxes e códigos existentes no mundo. Isso vem com o tempo, relaxa!
 
-Vamos começar relembrando nossa estrutura de uma maneira geral:
+Minha estrutura de uma maneira geral:
 
 ```
 pasta-do-projeto
@@ -28,27 +22,112 @@ pasta-do-projeto
 ├── package.json
 ```
 
-Agora vamos relembrar alguns conceitos importantes:
 
-- **M**odel: é responsável pela leitura e escrita de dados, e também de suas validações. É onde está toda a lógica de negócio da aplicação.
-- **V**iew: é a camada de interação com o usuário. Ela apenas faz a exibição dos dados, sendo ela por meio de um html ou xml (não usaremos ele, ta?).
-- **C**ontroller: O responsável por receber todas as requisições do usuário. Seus métodos chamados actions são responsáveis por uma página, controlando qual model usar e qual view será mostrado ao usuário.
-
-Passo-a-passo com a mão no <s>massa</s> código:
-
-1. Esqueleto do projeto
-2. Models
-3. Controllers
-4. Rotas
-5. App.js
-6. Server.js
 
 ### Postman
 
 Essa ferramenta permite testar serviços RESTful por meio do envio de requisições HTTP e da análise do seu retorno. Você pode salvar todas as suas _collections_ e facilitar o seu dia-a-dia como pessoa desenvolvedora!
 
-### Github
+# 🧠Falando um pouquinho do contexto
 
-Não podemos esquecer aquele commit bonitão para mostrar todo o esforço de vocês, não é mesmo?
+## `Como foi criado o projeto` 
+ <img src="https://user-images.githubusercontent.com/100974682/169424271-dfb902c0-90e2-409c-9331-5543258b7cae.jpg" alt="Gif Yeah" width="240">
 
+
+## API GAMES
+
+🎮 Retorna todos os jogos;
+
+🎮 Retornar apenas um jogo Específico;
+
+🎮 Cadastrar novo jogo;
+
+🎮 Atualizar um jogo específico;
+
+🎮 Deletar um jogo específico pelo id;
+
+🎮 Atualizar se gostou ou não do jogo;
+
+## Retornando no POSTMAN E NAS ROTAS
+
+**[GET] /games**
+
+**[GET] /games/:id**
+
+**[POST] /games**
+
+**[PUT] /games/:id**
+
+**[DELETE] /games/:id**
+
+**[PATCH] /games/:id/liked**
+
+## API SERIES
+
+📺 Retorna todas series;
+
+📺 Retornar series de um gênero específico;
+
+📺 Retornar apenas uma série específico;
+
+📺 Cadastrar nova série;
+
+📺 Deletar uma série específica;
+
+📺 Atualizar se gostou ou não da série;
+
+## Retornando no POSTMAN E NAS ROTAS
+
+**[GET] /series**
+
+**[GET] /series/genero**
+
+**[GET] /series/:id**
+
+**[POST] /series**
+
+**[DELETE] /series/:id**
+
+**[PATCH] /series/:id/liked**
+
+Tentei realizar um desafio proposto que solicitava criar mais algumas rotas para trabalhar com essas temporadas e episódios das series:
+
+Porém só fiz uma com ajuda da prof.ª caso alguém queira me ajudar a fazer esses códigos fique à vontade. Rsrs
+
+Nossa API de séries contém várias temporadas e essas contém vários episódios.
+
+O desafio proposto seria esse:  
+
+🎥 Cadastrar novo episódio na temporada, onde :id é o id da e :seasonId é o id da temporada; ** esse já foi feito Retornando no Postman  [POST] /series/:id/season/:seasonId/episode
+O que falta ser feito são essas abaixo:
+
+🎥 Cadastrar nova temporada na série, onde o :id é o id da série;
+
+🎥 Deletar uma temporada específica, onde :id é o id da série e :seasonId é o id da temporada;
+
+🎥 Deletar um episódio específico na temporada, onde :id é o id da série, :seasonId é o id da temporada e:episodeId é o id do episódio;
+
+🎥 Atualizar se o episódio foi assistido ou não, onde :id é o id da série, :seasonId é o id da temporada e :episodeId é o id do episódio;
+
+## Retornando no POSTMAN
+
+[POST] /series/:id/season
+
+[DELETE] /series/:id/season/:seasonId
+
+[DELETE] /series/:id/season/:seasonId/episode/:episodeId
+
+[PATCH] /series/:id/season/:seasonId/episode/:episodeId/watched
+
+## Conclusão:
+
+
+ <img src="https://user-images.githubusercontent.com/100974682/167975928-99cd4e0e-f853-4ee1-9490-2bf2c6425321.jpg" alt="Gif Yeah" width="400">
+ 
+---
+**# Segue minhas redes sociais, me add.**  :)
+
+- [linkedin](https://www.linkedin.com/in/b%C3%A1rbara-gon%C3%A7alves-211b5691/)
+- [github](https://github.com/idbabis) 
+- E-mail: idbabis@gmail.com
 ---
